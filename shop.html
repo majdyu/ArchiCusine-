@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="logo.png">
 
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -21,7 +21,12 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+		<title>ARCHICUISINE</title>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+		
+
 	</head>
 
 	<body>
@@ -30,7 +35,11 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="logo.png" alt="Logo" style="height: 40px; margin-right: 8px;">
+					ARCHICUISINE<span>.</span>
+				  </a>
+				  
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -38,20 +47,19 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="active"><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="index.html">Home</a></li>
+						<li><a class="nav-link" href="shop.html">Shop</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
 						<li><a class="nav-link" href="services.html">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 					</ul>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+
+					<!--<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
 						<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
 						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 				
@@ -77,169 +85,442 @@
 
 		
 
-		<div class="untree_co-section product-section before-footer-section">
-		    <div class="container">
-		      	<div class="row">
+		<br>
+		<!-- Onglets -->
+		<ul class="nav nav-tabs mb-4 justify-content-center custom-tabs" id="productTabs" role="tablist">
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#cuisine" type="button" role="tab">🍽️ Cuisine</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#dressing" type="button" role="tab">👗 Dressing</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pharmacie" type="button" role="tab">💊 Pharmacie</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chambre" type="button" role="tab">🛏️ Chambre</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#opticien" type="button" role="tab">👓 Opticien</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#living" type="button" role="tab">🛋️ Living</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#salledebain" type="button" role="tab">🛁 Salle de bain</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#bureaux" type="button" role="tab">🖥️ Bureaux</button>
+			  </li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#autres" type="button" role="tab">📦 Autres</button>
+			</li>
+		  </ul>
 
-		      		<!-- Start Column 1 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+		  <br>
+			
+  <!-- Contenu des onglets -->
+  <div class="tab-content" id="productTabsContent">
+  
+	
+  <!-- Cuisine -->
+  <div class="tab-pane fade show active" id="cuisine" role="tabpanel">
+    <div class="row">
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+      <!-- Produit 1 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+		<a href="javascript:void(0);" onclick="showZoom('images/cuisine1.png')">
+		  <img src="images/cuisine1.png" class="img-fluid product-thumbnail">
+		  <h3 class="product-title text-center mt-2">Cuisine Élégance</h3>
+		  <strong class="product-price text-center d-block">11.240.00 TND</strong>
+		</a>
+	  </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
+      <!-- Produit 2 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine2.png')">
+          <img src="images/cuisine2.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Café Crème</h3>
+          <strong class="product-price text-center d-block">9.670.00 TND</strong>
+        </a>
+      </div>
 
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
+      <!-- Produit 3 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine3.png')">
+          <img src="images/cuisine3.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Cocoon</h3>
+          <strong class="product-price text-center d-block">12.780.00 TND</strong>
+        </a>
+      </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
+      <!-- Produit 4 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine4.png')">
+          <img src="images/cuisine4.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Versailles</h3>
+          <strong class="product-price text-center d-block">16.490.00 TND</strong>
+        </a>
+      </div>
 
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
+      <!-- Produit 5 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine5.png')">
+          <img src="images/cuisine5.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Gris Urbain</h3>
+          <strong class="product-price text-center d-block">9.790.00 TND</strong>
+        </a>
+      </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
+      <!-- Produit 6 -->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine6.png')">
+          <img src="images/cuisine6.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Lumina</h3>
+          <strong class="product-price text-center d-block">8.290.00 TND</strong>
+        </a>
+      </div>
 
+	  <!-- Produit 7-->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine7.png')">
+          <img src="images/cuisine7.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Harmonia</h3>
+          <strong class="product-price text-center d-block">13.770.00 TND</strong>
+        </a>
+      </div>
 
-					<!-- Start Column 1 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+      <!-- Produit 8-->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine8.png')">
+          <img src="images/cuisine8.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Taupe Chic</h3>
+          <strong class="product-price text-center d-block">18.720.00 TND</strong>
+        </a>
+      </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+      <!-- Produit 9-->
+      <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <a href="javascript:void(0);" onclick="showZoom('images/cuisine9.png')">
+          <img src="images/cuisine9.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title text-center mt-2">Cuisine Terracotta</h3>
+          <strong class="product-price text-center d-block">19.240.00 TND</strong>
+        </a>
+      </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
+    </div>
+  </div>
 
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
+  
+	<!-- Dressing -->
+	<div class="tab-pane fade" id="dressing" role="tabpanel">
+	  <div class="row">
+		<!-- Produits dressing -->
+		 <!-- Produit 1 -->
+		 <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing1.png')">
+			  <img src="images/dressing1.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Linea</h3>
+			  <strong class="product-price text-center d-block">2.740.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 2 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing2.png')">
+			  <img src="images/dressing2.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">FlexiSpace</h3>
+			  <strong class="product-price text-center d-block">2.460.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 3 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing3.png')">
+			  <img src="images/dressing3.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">NüCloset</h3>
+			  <strong class="product-price text-center d-block">3.280.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 4 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing4.png')">
+			  <img src="images/dressing4.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">ClosetLab</h3>
+			  <strong class="product-price text-center d-block">6.240.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 5 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing5.png')">
+			  <img src="images/dressing5.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">The Chic Corner</h3>
+			  <strong class="product-price text-center d-block">8.560.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 6 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing6.png')">
+			  <img src="images/dressing6.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Écrin Privé</h3>
+			  <strong class="product-price text-center d-block">2.290.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 7-->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing7.png')">
+			  <img src="images/dressing7.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Royale Armoire</h3>
+			  <strong class="product-price text-center d-block">3.770.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 8-->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing8.png')">
+			  <img src="images/dressing8.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Urban Closet</h3>
+			  <strong class="product-price text-center d-block">2.720.00 TND</strong>
+			</a>
+		  </div>
+	
+		  <!-- Produit 9-->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/dressing9.png')">
+			  <img src="images/dressing9.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Essence d’Armoire</h3>
+			  <strong class="product-price text-center d-block">2.240.00 TND</strong>
+			</a>
+		  </div>
+	  </div>
+	</div>
+  
+	<!-- Meuble Pharmacie -->
+	<div class="tab-pane fade" id="pharmacie" role="tabpanel">
+	  <div class="row">
+		<!-- Produits pharmacie -->
+		 <!-- Produit 1 -->
+		 <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma1.png')">
+			  <img src="images/pharma1.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 1</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 2 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma2.png')">
+			  <img src="images/pharma2.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 2</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 3 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma3.png')">
+			  <img src="images/pharma3.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 3</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 4 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma4.png')">
+			  <img src="images/pharma4.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 4</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 5 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma5.png')">
+			  <img src="images/pharma5.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 5</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 6 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma6.png')">
+			  <img src="images/pharma6.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 6</h3>
+			</a>
+		  </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
+		  <!-- Produit 7 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma7.png')">
+			  <img src="images/pharma7.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 7</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 8 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma8.png')">
+			  <img src="images/pharma8.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Colonne Tiroir</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 9 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/pharma9.png')">
+			  <img src="images/pharma9.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Colonne Tiroir</h3>
+			</a>
+		  </div>
 
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
+	  </div>
+	</div>
+  
+	<!-- Chambre à coucher -->
+	<div class="tab-pane fade" id="chambre" role="tabpanel">
+	  <div class="row">
+		<!-- Produits chambre -->
+		  <!-- Produit 1 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre1.png')">
+			  <img src="images/chambre1.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 1</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 2 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre2.png')">
+			  <img src="images/chambre2.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 2</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 3 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre3.png')">
+			  <img src="images/chambre3.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 3</h3>
+			</a>
+		  </div>
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
+		   <!-- Produit 4 -->
+		   <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre4.png')">
+			  <img src="images/chambre4.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 4</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 5 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre5.png')">
+			  <img src="images/chambre5.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 5</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 6 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre6.png')">
+			  <img src="images/chambre6.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 6</h3>
+			</a>
+		  </div>
 
-		      	</div>
-		    </div>
+		  <!-- Produit 7 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre7.png')">
+			  <img src="images/chambre7.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Modéle 7</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 8 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre8.png')">
+			  <img src="images/chambre8.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Colonne Tiroir</h3>
+			</a>
+		  </div>
+	
+		  <!-- Produit 9 -->
+		  <div class="col-12 col-md-4 col-lg-4 mb-4">
+			<a href="javascript:void(0);" onclick="showZoom('images/chambre9.png')">
+			  <img src="images/chambre9.png" class="img-fluid product-thumbnail">
+			  <h3 class="product-title text-center mt-2">Colonne Tiroir</h3>
+			</a>
+		  </div>
+
+	  </div>
+	</div>
+  
+	<!-- Opticien -->
+	<div class="tab-pane fade" id="opticien" role="tabpanel">
+	  <div class="row">
+		<!-- Produits opticien -->
+	  </div>
+	</div>
+  
+	<!-- Living Room -->
+	<div class="tab-pane fade" id="living" role="tabpanel">
+	  <div class="row">
+		<!-- Produits living -->
+	  </div>
+	</div>
+
+	<!-- Salle de Bain -->
+	<div class="tab-pane fade" id="sallebain" role="tabpanel">
+		<div class="row">
+		  <!-- Produits salle de bain -->
 		</div>
+	  </div>
 
+	<!-- Bureaux -->
+	<div class="tab-pane fade" id="bureaux" role="tabpanel">
+		<div class="row">
+		  <!-- Produits bureaux -->
+		</div>
+	</div>
+
+	<!-- Autres -->
+	<div class="tab-pane fade" id="autres" role="tabpanel">
+		<div class="row">
+		  <!-- Produits autres -->
+		</div>
+	  </div>
+  
+  </div>
+
+  <br><br><br><br>
+  
 
 		<!-- Start Footer Section -->
 		<footer class="footer-section">
 			<div class="container relative">
 
 				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
+					<img src="images/burau.png" alt="Image" class="img-fluid">
 				</div>
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<div class="mb-4 footer-logo-wrap">
+							<a href="#" class="footer-logo d-flex align-items-center">
+							  <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+							  ARCHICUISINE
+							</a>
+						  </div>
+						  
+						<p class="mb-4">ARCHICUISINE est une entreprise tunisienne spécialisée dans la fabrication sur mesure de cuisines, 
+							dressings et meubles professionnels, alliant tradition, innovation et design moderne.</p>
 
 						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+							<li><a href="https://www.facebook.com/ArchiCuisineOfficielPage"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href=""><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href=""><span class="fa fa-brands fa-linkedin"></span></a></li>
 						</ul>
 					</div>
 
@@ -248,37 +529,19 @@
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
 									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact us</a></li>
+									<li><a href="#services">Services</a></li>
 								</ul>
 							</div>
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Knowledge base</a></li>
-									<li><a href="#">Live chat</a></li>
+									<li><a href="#we-help-section">Support</a></li>
+									<li>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</a>
+									</li>
+									  
 								</ul>
 							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Our team</a></li>
-									<li><a href="#">Leadership</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Nordic Chair</a></li>
-									<li><a href="#">Kruzo Aero</a></li>
-									<li><a href="#">Ergonomic Chair</a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
 
 				</div>
@@ -286,16 +549,25 @@
 				<div class="border-top copyright">
 					<div class="row pt-4">
 						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
-            </p>
+							<p class="mb-2 text-center text-lg-start">© 2025 ARCHICUISINE – Aménagement & design sur mesure depuis 1997.
+								Qualité, innovation et savoir-faire au service de vos espaces.
+							</p>
 						</div>
 
 						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
+							<p class="mb-1">
+							  <i class="fas fa-phone-alt me-2"></i>
+							  <strong>Tel :</strong> +216 98 355 713 / +216 93 398 605
+							</p>
+							<p class="mb-0">
+							  <i class="fas fa-map-marker-alt me-2"></i>
+							  <a href="https://maps.app.goo.gl/8WmgnaxULQ4LLBcG9?g_st=awb" target="_blank">
+								Localisation
+							  </a>
+							</p>
+						  </div>
+						  
+						  
 
 					</div>
 				</div>
@@ -304,6 +576,28 @@
 		</footer>
 		<!-- End Footer Section -->	
 
+		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="contactModalLabel">Nos numéros</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center">
+				  <p><strong>ADEL OUESLATI: +216 98 355 713</strong></p>
+				  <p><strong>SAMIA JAAFAR : +216 93 398 605</strong></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		<div id="zoomOverlay" onclick="closeZoom()"></div>
+			<div id="zoomModal">
+			<img id="zoomImage" src="" alt="Zoom">
+		</div>
+		  
+			
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>

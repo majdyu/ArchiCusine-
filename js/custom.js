@@ -71,3 +71,26 @@
 
 
 })()
+function showZoom(src) {
+	document.getElementById('zoomImage').src = src;
+	document.getElementById('zoomModal').style.display = 'block';
+	document.getElementById('zoomOverlay').style.display = 'block';
+  }
+  
+  function closeZoom() {
+	document.getElementById('zoomModal').style.display = 'none';
+	document.getElementById('zoomOverlay').style.display = 'none';
+  }
+  
+// Récupère le chemin actuel (ex: "about.html")
+const currentPage = window.location.pathname.split("/").pop();
+
+// Récupère tous les liens de navigation
+const navLinks = document.querySelectorAll(".custom-navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+  // Compare href avec la page actuelle
+  if (link.getAttribute("href") === currentPage) {
+	link.parentElement.classList.add("active");
+  }
+});
