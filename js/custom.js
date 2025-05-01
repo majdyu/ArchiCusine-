@@ -94,3 +94,37 @@ navLinks.forEach(link => {
 	link.parentElement.classList.add("active");
   }
 });
+
+  const counters = document.querySelectorAll('.counter');
+  const speed = 100;
+
+  const animateCounters = () => {
+	counters.forEach(counter => {
+	  const target = +counter.getAttribute('data-count');
+	  let count = 0;
+
+	  const updateCount = () => {
+		const increment = Math.ceil(target / speed);
+		count += increment;
+		if (count < target) {
+		  counter.innerText = count;
+		  requestAnimationFrame(updateCount);
+		} else {
+		  counter.innerText = target + '+';
+		}
+	  };
+
+	  updateCount();
+	});
+  };
+
+  // Optionally animate when section comes into view
+  let triggered = false;
+  window.addEventListener('scroll', () => {
+	const section = document.querySelector('#nos-chiffres');
+	const rect = section.getBoundingClientRect();
+	if (rect.top < window.innerHeight && !triggered) {
+	  triggered = true;
+	  animateCounters();
+	}
+  });

@@ -7,22 +7,25 @@
 */ -->
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
-
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
-
-		<!-- Bootstrap CSS -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Untree.co">
+		<meta name="description" content="ARCHICUISINE - Cuisines, dressings et aménagement sur mesure depuis 1997.">
+		<meta name="keywords" content="cuisine, dressing, aménagement, sur-mesure, ARCHICUISINE">
+	  
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="logo.png" type="image/png">
+	  
+		<!-- CSS Files -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
-	</head>
+	  
+		<title>ARCHICUISINE</title>
+	  </head>
+	  
 
 	<body>
 
@@ -30,7 +33,11 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand d-flex align-items-center" href="index.html">
+					<img src="logo.png" alt="Logo" style="height: 40px; margin-right: 8px;">
+					ARCHICUISINE<span>.</span>
+				  </a>
+				  
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -38,20 +45,19 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
+						<li><a class="nav-link" href="index.html">Home</a></li>
 						<li><a class="nav-link" href="shop.html">Shop</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
-						<li class="active"><a class="nav-link" href="contact.html">Contact us</a></li>
+						<!--<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>-->
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 					</ul>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+
+					<!--<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
 						<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
 						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 				
@@ -59,29 +65,34 @@
 		<!-- End Header/Navigation -->
 
 		<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>Contact</h1>
-								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
-							</div>
+		<div class="hero">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-5">
+						<div class="intro-excerpt">
+							<h1>📞 Contactez <span class="d-block">ARCHICUISINE</span></h1>
+							<p class="mb-4">Une question ? Un projet ? Besoin d’un devis ou d’un rendez-vous ?  
+							Notre équipe est à votre écoute pour vous accompagner de l’idée à la réalisation.</p>
+							<p>
+								<a href="#contact-form" class="btn btn-secondary me-2">Écrivez-nous</a>
+								<a href="tel:+21698355713" class="btn btn-outline-secondary">Appeler maintenant</a>
+							</p>
 						</div>
-						<div class="col-lg-7">
-							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
-							</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="hero-img-wrap">
+							<img src="images/cm1.png" class="img-fluid" alt="Contactez ArchiCuisine">
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		<!-- End Hero Section -->
+
 
 		
 		<!-- Start Contact Form -->
-		<div class="untree_co-section">
+		<div class="untree_co-section" id="contact-form">
       <div class="container">
 
         <div class="block">
@@ -93,17 +104,25 @@
 
               <div class="row mb-5">
                 <div class="col-lg-4">
-                  <div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
-                    <div class="service-icon color-1 mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                      </svg>
-                    </div> <!-- /.icon -->
-                    <div class="service-contents">
-                      <p>43 Raymouth Rd. Baltemoer, London 3910</p>
-                    </div> <!-- /.service-contents-->
-                  </div> <!-- /.service -->
-                </div>
+					<a href="https://www.google.com/maps/place/ARCHICUISINE,+Sidi+Thabet+2083/data=!4m2!3m1!1s0x12fd352c6c2ccd3f:0x3652a2913e0f0a52?utm_source=mstt_1&entry=gps" 
+					   target="_blank" 
+					   class="text-decoration-none">
+					  
+					  <div class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+						<div class="service-icon color-1 mb-4">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+							<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+						  </svg>
+						</div>
+						<div class="service-contents">
+						  <p class="mb-0 text-muted">ARCHICUISINE, Sidi Thabet 2083</p>
+						</div>
+					  </div>
+					  
+					</a>
+				</div>
+				  
+				  
 
                 <div class="col-lg-4">
                   <div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
@@ -126,39 +145,40 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>+1 294 3925 3939</p>
+                      <p>+216 98355713</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
               </div>
 
-              <form>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="text-black" for="fname">First name</label>
-                      <input type="text" class="form-control" id="fname">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="text-black" for="lname">Last name</label>
-                      <input type="text" class="form-control" id="lname">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="text-black" for="email">Email address</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-
-                <div class="form-group mb-5">
-                  <label class="text-black" for="message">Message</label>
-                  <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
-              </form>
+              <form action="contact_handler.php" method="POST">
+				<div class="row">
+				  <div class="col-6">
+					<div class="form-group">
+					  <label class="text-black" for="fname">First name</label>
+					  <input type="text" name="fname" class="form-control" id="fname" required>
+					</div>
+				  </div>
+				  <div class="col-6">
+					<div class="form-group">
+					  <label class="text-black" for="lname">Last name</label>
+					  <input type="text" name="lname" class="form-control" id="lname" required>
+					</div>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="text-black" for="email">Email address</label>
+				  <input type="email" name="email" class="form-control" id="email" required>
+				</div>
+			  
+				<div class="form-group mb-5">
+				  <label class="text-black" for="message">Message</label>
+				  <textarea name="message" class="form-control" id="message" cols="30" rows="5" required></textarea>
+				</div>
+			  
+				<button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
+			  </form>
+			  
 
             </div>
 
@@ -181,42 +201,24 @@
 			<div class="container relative">
 
 				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
+					<img src="images/burau.png" alt="Image" class="img-fluid">
 				</div>
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<div class="mb-4 footer-logo-wrap">
+							<a href="#" class="footer-logo d-flex align-items-center">
+							  <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+							  ARCHICUISINE
+							</a>
+						  </div>
+						  
+						<p class="mb-4">ARCHICUISINE est une entreprise tunisienne spécialisée dans la fabrication sur mesure de cuisines, 
+							dressings et meubles professionnels, alliant tradition, innovation et design moderne.</p>
 
 						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+							<li><a href="https://www.facebook.com/ArchiCuisineOfficielPage"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href=""><span class="fa fa-brands fa-instagram"></span></a></li>
 						</ul>
 					</div>
 
@@ -224,38 +226,20 @@
 						<div class="row links-wrap">
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact us</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="#services">Services</a></li>
 								</ul>
 							</div>
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Knowledge base</a></li>
-									<li><a href="#">Live chat</a></li>
+									<li><a href="contact.html">Support</a></li>
+									<li>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</a>
+									</li>
+									  
 								</ul>
 							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Our team</a></li>
-									<li><a href="#">Leadership</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Nordic Chair</a></li>
-									<li><a href="#">Kruzo Aero</a></li>
-									<li><a href="#">Ergonomic Chair</a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
 
 				</div>
@@ -263,16 +247,25 @@
 				<div class="border-top copyright">
 					<div class="row pt-4">
 						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
-            </p>
+							<p class="mb-2 text-center text-lg-start">© 2025 ARCHICUISINE – Aménagement & design sur mesure depuis 1997.
+								Qualité, innovation et savoir-faire au service de vos espaces.
+							</p>
 						</div>
 
 						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
+							<p class="mb-1">
+							  <i class="fas fa-phone-alt me-2"></i>
+							  <strong>Tel :</strong> +216 98 355 713 / +216 93 398 605
+							</p>
+							<p class="mb-0">
+							  <i class="fas fa-map-marker-alt me-2"></i>
+							  <a href="https://maps.app.goo.gl/8WmgnaxULQ4LLBcG9?g_st=awb" target="_blank">
+								Localisation
+							  </a>
+							</p>
+						  </div>
+						  
+						  
 
 					</div>
 				</div>
@@ -281,6 +274,21 @@
 		</footer>
 		<!-- End Footer Section -->	
 
+		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="contactModalLabel">Nos numéros</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center">
+				  <p><strong>ADEL OUESLATI: +216 98 355 713</strong></p>
+				  <p><strong>SAMIA JAAFAR : +216 93 398 605</strong></p>
+				  <p><strong>MAJD OUESLATI: +216 99 850 813</strong></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
