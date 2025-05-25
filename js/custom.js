@@ -128,3 +128,5 @@ navLinks.forEach(link => {
 	  animateCounters();
 	}
   });
+
+  

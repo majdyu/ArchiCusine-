@@ -854,4 +854,123 @@ textarea {
 }
 
     
+.contact-box p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.contact-box .email a {
+  word-break: break-word;
+  display: inline-block;
+  color: #444;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-box .email a:hover {
+  color: #d33c3c;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-box .email a {
+    font-size: 0.85rem;
+  }
+}
+
+  /* Polices élégantes (tu peux aussi ajouter dans <head> un import Google Fonts si besoin) */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+  #contactModal .modal-content {
+    border-radius: 12px;
+    background-color: #fafafa;
+    color: #333;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #contactModal .modal-header {
+    border-bottom: 1px solid #ddd;
+    padding: 1.25rem 1.5rem;
+    background-color: #fff;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+  }
+
+  #contactModalLabel {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #b18a44; /* doré doux */
+    letter-spacing: 0.05em;
+  }
+
+  .btn-close {
+    filter: none;
+    opacity: 0.6;
+    transition: opacity 0.25s ease;
+  }
+  .btn-close:hover {
+    opacity: 1;
+  }
+
+  .modal-body {
+    padding: 2rem 2rem;
+    text-align: left;
+  }
+
+  /* Conteneur de chaque contact */
+  .contact-card {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .contact-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    margin-bottom: 0.15rem;
+  }
+
+  .contact-phone,
+  .contact-email {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    transition: color 0.25s ease;
+    cursor: pointer;
+  }
+
+  .contact-phone:hover,
+  .contact-email:hover {
+    color: #b18a44;
+    text-decoration: underline;
+  }
+
+  /* Icônes discrètes */
+  .contact-phone::before {
+    content: "📞";
+    margin-right: 8px;
+  }
+  .contact-email::before {
+    content: "✉️";
+    margin-right: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .modal-body {
+      padding: 1.5rem 1rem;
+    }
+    #contactModalLabel {
+      font-size: 1.5rem;
+    }
+    .contact-name {
+      font-size: 1.2rem;
+    }
+  }
     
