@@ -35,6 +35,7 @@
 	      var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
 	      var increase = quantityContainer.getElementsByClassName('increase')[0];
 	      var decrease = quantityContainer.getElementsByClassName('decrease')[0];
+	      if (!quantityAmount || !increase || !decrease) return;
 	      increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
 	      decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
 	    }
@@ -47,8 +48,6 @@
 
 	    function increaseValue(event, quantityAmount) {
 	        value = parseInt(quantityAmount.value, 10);
-
-	        console.log(quantityAmount, quantityAmount.value);
 
 	        value = isNaN(value) ? 0 : value;
 	        value++;
@@ -72,20 +71,34 @@
 
 })()
 function showZoom(src) {
-	document.getElementById('zoomImage').src = src;
-	document.getElementById('zoomModal').style.display = 'block';
-	document.getElementById('zoomOverlay').style.display = 'block';
+	const zoomImage = document.getElementById('zoomImage');
+	const zoomModal = document.getElementById('zoomModal');
+	const zoomOverlay = document.getElementById('zoomOverlay');
+	if (!zoomImage || !zoomModal || !zoomOverlay) return;
+	zoomImage.src = src;
+	zoomModal.style.display = 'block';
+	zoomOverlay.style.display = 'block';
+	const closeButton = zoomModal.querySelector('.zoom-close');
+	if (closeButton) closeButton.focus();
   }
   
   function closeZoom() {
-	document.getElementById('zoomModal').style.display = 'none';
-	document.getElementById('zoomOverlay').style.display = 'none';
+	const zoomModal = document.getElementById('zoomModal');
+	const zoomOverlay = document.getElementById('zoomOverlay');
+	if (zoomModal) zoomModal.style.display = 'none';
+	if (zoomOverlay) zoomOverlay.style.display = 'none';
   }
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+	closeZoom();
+  }
+});
   
-// Récupère le chemin actuel (ex: "about.html")
+// Recupere le chemin actuel (ex: "about.html")
 const currentPage = window.location.pathname.split("/").pop();
 
-// Récupère tous les liens de navigation
+// Recupere tous les liens de navigation
 const navLinks = document.querySelectorAll(".custom-navbar-nav .nav-link");
 
 navLinks.forEach(link => {
@@ -118,15 +131,16 @@ navLinks.forEach(link => {
 	});
   };
 
-  // Optionally animate when section comes into view
-  let triggered = false;
-  window.addEventListener('scroll', () => {
 	const section = document.querySelector('#nos-chiffres');
-	const rect = section.getBoundingClientRect();
-	if (rect.top < window.innerHeight && !triggered) {
-	  triggered = true;
-	  animateCounters();
+	if (section && counters.length > 0) {
+	  let triggered = false;
+	  const triggerCounters = () => {
+		const rect = section.getBoundingClientRect();
+		if (rect.top < window.innerHeight && !triggered) {
+		  triggered = true;
+		  animateCounters();
+		}
+	  };
+	  window.addEventListener('scroll', triggerCounters);
+	  triggerCounters();
 	}
-  });
-
-  
